@@ -36,6 +36,7 @@ export class Games {
     const response = await fetch(this.url, this.options);
     // CONVERT FROM STRINGIFY TO PARSE
     this.result = await response.json();
+    $(".loading-page").addClass("d-none");
     const games = new GameInfo(this.result);
   }
 

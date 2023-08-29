@@ -48,7 +48,10 @@ export class GameInfo{
         $(".Platform").html(platformBox);
         $(".discription").html(discBox)
         $(".title").html(titleBox)
-        $(".btnLink").attr("href",linkBox)
+        $(".btnLink").attr("href",linkBox);
+        setTimeout(function(){
+          $(".game-info-loading-page").addClass("d-none");
+        },300)
       })
     }
      // CLOSE GAME INFO
