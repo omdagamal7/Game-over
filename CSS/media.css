@@ -10,6 +10,19 @@
 
   }
   .box {
-    margin: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
+  #row {
+    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+    margin: auto;
+  }
+  #games .container {
+    padding: 0 !important;
+    margin: auto;
+  }
+}
+
+@media (width <= 1300px) {
+
 }

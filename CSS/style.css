@@ -63,7 +63,6 @@ nav li a.active {
 #row {
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fill,minmax(250px, 1fr));
 }
 #row .box > div > div {
   height: 100%;
