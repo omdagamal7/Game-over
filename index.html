@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/media.css">
+  <title>GAME REVIEWS</title>
+</head>
+<body>
+  <!-- START HEADER -->
+ <header>
+</header> 
+<!-- END HEADER -->
+<!-- START NAV -->
+<nav class="navbar navbar-dark navbar-expand-lg col-md-9 mx-auto custom-nav  rounded-4">
+  <div class="container px-3 ">
+    <a class="navbar-brand" href="#"><img src="./IMG/logo-sm.png" class="logo" alt=""> GAME REVIEWS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link anchor active">mmorpg</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anchor">shooter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anchor">sailing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anchor">permadeath</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anchor">superhero</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anchor">pixel</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <!-- END NAV -->
+  <!-- START GAMES -->
+<section id="games">
+  <div class="container">
+    <div class="row gy-5 btm" id="row">
+    </div>
+  </div>
+</section>
+<!-- END GAMES -->
+<!-- START GAMEINFO -->
+  <section id="gameInfo" class="position-fixed d-none">
+    <div class="container py-5">
+      <div class="top mb-5 d-flex justify-content-between align-items-center">
+        <h2 class="text-white">Details</h2>
+        <i class="close fa-solid fa-xmark fs-3 text-secondary cur-pointer btn btn-dark border-0"></i>
+      </div>
+      <div class="info d-flex gap-5 text-white">
+        <img class="imgInfo rounded" src="" alt="">
+        <div class="infoData">
+          <h4 class="title"></h4>
+          <div class="d-flex align-items-center"><p class="me-2">Category: </p> <p class="Category btn btn-info mb-3 p-0 px-2"></p></div>
+          <div class="d-flex align-items-center"><p class="me-2">Platform: </p> <p class="Platform btn btn-info mb-3 p-0 px-2"></p></div>
+          <div class="d-flex align-items-center"><p class="me-2">Statue: </p> <p class="Status btn btn-info p-0 px-2 mb-3 ">live</p></div>
+          <p class="discription"></p>
+          <a class="btnLink btn btn-outline-warning text-white" target="_blank" href="">Show Game</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- EBD GAMEINFO -->
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="./JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script type="module" src="JS/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,11 @@
+@media (width <= 768px) {
+  .gameInfo {
+    flex-wrap: wrap;
+  }
+  .gameInfo img {
+    flex-basis: 100%;
+  }
+  .info {
+    flex-basis: 100%;
+  }
+}

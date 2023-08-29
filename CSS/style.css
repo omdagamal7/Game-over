@@ -1,0 +1,100 @@
+:root {
+  --main-color: #272b30;
+}
+body {
+  font-family: "Comfortaa", cursive;
+  background-color: var(--main-color);
+}
+.logo {
+  width: 3rem;
+  height: 3rem;
+}
+.h-fit {
+  height: fit-content;
+}
+.cur-pointer {
+  cursor: pointer;
+}
+/* START HEADER */
+
+header {
+  height: 30vh;
+  background-image: url(../IMG/wraper.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* END HEADER */
+
+/* START NAV */
+
+nav {
+  background-color: #3a497b;
+  position: sticky !important;
+  top: 37px;
+  transform: translateY(-50%);
+  z-index: 10;
+  box-shadow: 0 0 5px 1px black;
+}
+
+nav li a {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+nav li a:hover {
+  color: #09c !important;
+}
+nav li a.active {
+  color: #09c !important;
+}
+/* END NAV */
+
+/* START GAMES */
+
+#games {
+  padding-top: 250px;
+}
+
+/* END GAMES */
+
+/* START HOME */
+#row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fill,minmax(250px, 1fr));
+}
+#row .box > div > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.box img {
+  filter: grayscale(0.7);
+  transition: all 0.3s;
+}
+.box:hover img {
+  filter: grayscale(0);
+}
+.box {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.box:hover {
+  transform: scale(1.0300);
+}
+
+/* END HOME */
+
+/* START GAME INFO */
+
+#gameInfo {
+  inset: 0;
+  background-color: var(--main-color);
+  z-index: 11;
+}
+
+/* END GAME INFO */
