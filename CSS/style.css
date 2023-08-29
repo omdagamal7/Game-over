@@ -23,10 +23,6 @@ body {
   inset: 0;
   z-index: 213;
   background-color: rgba(39, 43, 48,0.8);
-
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 .loading-page::before,.game-info-loading-page::before {
   content: '';
