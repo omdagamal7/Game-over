@@ -8,7 +8,7 @@ export class GameInfo{
     let game = "";
     for (let i = 0; i < this.result.length; i++) {
       game += `
-      <div class="box mx-3">
+      <div class="box">
       <div class="border border-dark border-1 p-3 h-100 ">
       <div class="card bg-transparent text-white d-flex flex-column border-0 justify-content-between align-items-center">
         <img src="${this.result[i].thumbnail}" class="card-img-top">
