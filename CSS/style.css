@@ -23,33 +23,27 @@ body {
   inset: 0;
   z-index: 213;
   background-color: rgba(39, 43, 48,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.loading-page::before,.game-info-loading-page::before {
-  content: '';
-  position: absolute;
+.loading-page .white ,.game-info-loading-page .white {
   width: 100px;
   height: 100px;
   border: 4px solid ;
   border-color: white transparent transparent;
   border-right: none;
   border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% -50%);
   animation: turn 0.8s infinite linear;
 }
-.loading-page::after,.game-info-loading-page::after {
-  content: '';
-  position: absolute;
+.loading-page .red,.game-info-loading-page .red {
   width: 100px;
   height: 100px;
   border: 4px solid ;
+  top: -4px;
   border-color: red transparent transparent;
   border-left: none;
   border-radius: 50%;
-  top: calc(50% - 5px);
-  left: 50%;
-  transform: translate(-50% -50%);
   animation: turn2 0.8s infinite linear;
 }
 
