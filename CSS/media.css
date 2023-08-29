@@ -15,7 +15,7 @@
     margin-right: 0 !important;
   }
   #row {
-    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(270px, 1fr));
     column-gap: 20px;
     margin: auto;
   }
