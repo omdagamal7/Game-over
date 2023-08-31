@@ -17,6 +17,15 @@ body {
 .cur-pointer {
   cursor: pointer;
 }
+.flex-0 {
+  flex: 0;
+}
+.flex-basis-40 {
+  flex-basis: 40%;
+}
+.flex-basis-60 {
+  flex-basis: 60%;
+}
 /* LOADING PAGE */
 .loading-page,.game-info-loading-page {
   position: fixed;

@@ -1,9 +1,8 @@
 @media (width <= 768px) {
   .gameInfo {
     flex-basis: 100%;
-
   }
-  .Info .imgInf {
+  .imgInfo {
     flex-basis: 100%;
   }
   .info {
