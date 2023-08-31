@@ -6,6 +6,7 @@ export class GameInfo{
 async getDetails(id){
   $(".game-info-loading-page").removeClass("d-none");
   const url = `https://free-to-play-games-database.p.rapidapi.com/api/game?id=${id}`;
+
   const options = {
     method: 'GET',
     headers: {
@@ -16,6 +17,7 @@ async getDetails(id){
 
   const response = await fetch(url, options);
   const result = await response.json();
+  console.log('result: ', result);
   $(".game-info-loading-page").addClass("d-none");
   this.displayDetails(result);
 

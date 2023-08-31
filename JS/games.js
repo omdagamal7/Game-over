@@ -64,15 +64,17 @@ export class Games {
     </div>
     ` 
     $("#row").html(game);
+
     document.querySelectorAll(".box").forEach((box) => {
       box.addEventListener("click",()=>{
         $("#gameInfo").removeClass("d-none");
-        $("#games").addClass("d-none");
+        $(".interface").addClass("d-none");
+
         const info = new GameInfo(box.dataset.id);
       })
             $(".close").click(()=>{
         $("#gameInfo").addClass("d-none")
-        $("#games").removeClass("d-none");
+        $(".interface").removeClass("d-none");
       })
     })
   }
