@@ -38,7 +38,6 @@ export class Games {
     this.result = await response.json();
     this.display(this.result)
     console.log('result: ', this.result);
-
     $(".loading-page").addClass("d-none");
   }
   display(result) {
@@ -68,10 +67,12 @@ export class Games {
     document.querySelectorAll(".box").forEach((box) => {
       box.addEventListener("click",()=>{
         $("#gameInfo").removeClass("d-none");
+        $("#games").addClass("d-none");
         const info = new GameInfo(box.dataset.id);
       })
             $(".close").click(()=>{
         $("#gameInfo").addClass("d-none")
+        $("#games").removeClass("d-none");
       })
     })
   }
